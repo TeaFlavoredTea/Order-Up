@@ -19,6 +19,11 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
     this.displayInvalidLogin = false
+
+    let rememberedUser = localStorage.getItem('stayLoggedIn')
+    if( rememberedUser != null) {
+      this.username = rememberedUser
+    }
   }
 
   doLogin(){
@@ -32,6 +37,10 @@ export class LoginComponent implements OnInit {
           // Check if the user wants to stay logged-in.
           if (this.rememberLogin === true){
             // Logic to stay logged in.
+            localStorage.setItem('stayLoggedIn', this.username)
+          }
+          else {
+            localStorage.removeItem('stayLoggedIn')
           }
 
           // remember that the user is logged in between page re-loads
