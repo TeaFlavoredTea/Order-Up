@@ -1,0 +1,61 @@
+<app-home-top-menue></app-home-top-menue>
+<div class='row p-3'>
+    <div class=col-2></div>
+    <div class='col-4 p-3'>
+        <input type='text' class='form-control form-control-lg' [(ngModel)]='searchString' (keyup)='filterProducts()' placeholder='Search Food Items'>
+    </div>
+    <div class=col-6></div>
+</div>
+
+<div class='row p-3'>
+    <div class='col-sm-12 col-md-6 col-lg-3 p-3' *ngFor='let item of filteredFoods'>
+        <div class='card'>
+            <img [src]='item.imageURL' alt='Food Image' />
+            <div class='card-body'>
+                <div class='row'>
+                    <h6>{{item.restaurant}}</h6>
+                </div>
+                <div class='row'>
+                    {{item.cuisine}} | Rating: {{item.rating}} | {{item.price | currency}}
+                </div>
+                <div class='row'>
+                    <dl><dt>{{item.name}}</dt></dl>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-6'>
+                        <button class='btn btn-primary' data-toggle='modal' data-target='#myModal' (click)='selectItem(item)'>Add to Cart</button>
+                    </div>
+                    <div class='col-1'>
+                        <button class='btn btn-primary' (click)='buyNow(item)'>Buy/Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h6 class="modal-title">Are you sure you want to add this item to cart?</h6>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+  
+        <!-- Modal body -->
+        <div class="modal-body">
+          Add {{selectedItem.name}} to cart for {{selectedItem.price | currency}}?
+        </div>
+  
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success" data-dismiss="modal" (click)='addToCart()'>Add To Cart</button>
+        </div>
+  
+      </div>
+    </div>
+  </div>

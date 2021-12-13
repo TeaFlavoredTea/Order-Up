@@ -1,0 +1,29 @@
+<app-home-top-menue></app-home-top-menue>
+<div class='row p-3'>
+    <div class='col-3'>
+        <button class='btn btn-outline-primary' (click)=doAddAddress()>Add New Address</button>
+    </div>
+</div>
+<div class='row p-3'>
+    <div class='col-sm-12 col-md-6 col-lg-3 p-3' *ngFor='let address of userAdresses'>
+        <div class='card'>
+            <div class='card-body'>
+                <div class='row'>
+                    <h6>Address</h6>
+                </div>
+                <div class='row'>
+                    {{address.name}}
+                </div>
+                <div class='row'>
+                    <dl><dt>{{address.address}}</dt></dl>
+                </div>
+                <div class='row p-1'>
+                    <button class='btn btn-outline-primary' (click)='doEditAddress(address.id)'>Edit</button>
+                </div>
+                <div class='row p-1'>
+                    <button class='btn btn-danger' (click)='doDeleteAddress(address.id)'>Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

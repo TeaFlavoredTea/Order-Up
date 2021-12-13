@@ -1,0 +1,53 @@
+<app-login-headder></app-login-headder>
+<div class='container p-3'>
+    <div class='card'>
+        <div class='card-header'>
+            Register
+        </div>
+        <div class='card-body'>
+            <form (ngSubmit)='doRegister()'>
+                <div class='row p-1'>
+                    <div class='col-2'>
+                        Name 
+                    </div>
+                    <div class='col-2'>
+                        <input type='text' name='username' [(ngModel)]='name'>
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'>
+                        E-Mail Address 
+                    </div>
+                    <div class='col-2'>
+                        <input type='text' name='username' [(ngModel)]='username'>
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'>
+                        Password 
+                    </div>
+                    <div class='col-2'>
+                        <input type='password' name='password' [(ngModel)]='password'>
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'>
+                        Confirm Password 
+                    </div>
+                    <div class='col-2'>
+                        <input type='password' name='password' [(ngModel)]='confirmPassword'>
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'></div>
+                    <div class='col-4'>
+                        <button type='submit' class='btn btn-primary'>Register</button> 
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+

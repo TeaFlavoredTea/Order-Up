@@ -1,0 +1,42 @@
+<app-login-headder></app-login-headder>
+<div class='container p-3'>
+    <div class='card'>
+        <div class='card-header'>
+            Login
+        </div>
+        <div class='card-body'>
+            <form (ngSubmit)='doLogin()'>
+                <div *ngIf='displayInvalidLogin' class='text-danger small'> Invalid username or password</div>
+                <div class='row p-1'>
+                    <div class='col-2'>
+                        E-Mail Address 
+                    </div>
+                    <div class='col-2'>
+                        <input type='text' name='username' [(ngModel)]='username'>
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'>
+                        Password 
+                    </div>
+                    <div class='col-2'>
+                        <input type='password' name='password' [(ngModel)]='password'>
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'></div>
+                    <div class='col-2'>
+                        <input type='checkbox' name='rememberLogin' class='form-check-input' [(ngModel)]='rememberLogin'> Remember me
+                    </div>
+                </div>
+                <div class='row p-1'>
+                    <div class='col-2'></div>
+                    <div class='col-4'>
+                        <button type='submit' class='btn btn-primary'>Login</button> 
+                        <input type='button' class='btn btn-link' value='Forgot Your Password?' (click)='toRecoverPassword()'>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,20 @@
+<div class='card'>
+    <div class="row">
+        <div class="col-2"><button class='btn' (click)='goToHome()'><h4>Order Up</h4></button></div>
+        <div class='col-7'></div>
+        <div class="col-1"><button class='btn' (click)='goToCart()'>Cart 🛒</button></div>
+        <div class='col-1'>
+            <div class="dropdown">
+                <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
+                  {{user}}
+                </button>
+                <div class="dropdown-menu">
+                  <button class="dropdown-item" (click)='goToTrackOrder()'>TrackOrder</button>
+                  <button class="dropdown-item" (click)='goToProfile()'>Profile</button>
+                  <button class="dropdown-item" (click)='goToSettings()'>Settings</button>
+                  <button class="dropdown-item" (click)='goToLogout()'>Logout</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<app-home-top-menue></app-home-top-menue>
+<h4>Add an Address</h4>
+
+<div class='container'>
+<form (ngSubmit)='doAddAddress()'>
+    Name: <br>
+    <input type='text' [(ngModel)]='addrName' name='addrName'><br>
+    Address:<br>
+    <input type='text' [(ngModel)]='addrBody' name='addrBody'><br><br>
+    <button type='submit' class='btn btn-primary'>Add Address</button>
+</form>
+</div>

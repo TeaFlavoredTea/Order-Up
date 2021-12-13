@@ -1,0 +1,159 @@
+{
+  "users": [
+    {
+      "id": "bob@gmail.com",
+      "password": "bobRules",
+      "name": "Bob"
+    },
+    {
+      "id": "bobet@gmail.com",
+      "password": "bobetRules",
+      "name": "Bobet"
+    },
+    {
+      "id": "bobo@gmail.com",
+      "password": "abc",
+      "name": "bobo"
+    },
+    {
+      "id": "Tanner@gmail.com",
+      "password": "123",
+      "name": "tanner"
+    }
+  ],
+  "address": [
+    {
+      "id": "bob@gmail.com",
+      "addresses": [
+        {
+          "id": "0",
+          "name": "BoB",
+          "address": "101 Bob St, BobVillee, BO, 55555"
+        },
+        {
+          "id": 1,
+          "name": "Bobina jr",
+          "address": "101 Bob St, BobVille, BO, 55555"
+        }
+      ]
+    },
+    {
+      "id": "bobet@gmail.com",
+      "addresses": []
+    },
+    {
+      "id": "bobo@gmail.com",
+      "addresses": []
+    },
+    {
+      "id": "Tanner@gmail.com",
+      "addresses": [
+        {
+          "name": "tanner guy",
+          "address": "1111 St, TannerVille, TX, 55555"
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "bob@gmail.com",
+      "cards": [
+        {
+          "id": "0",
+          "name": "Bob bobface",
+          "cardNumber": "5555555555555555"
+        },
+        {
+          "name": "bob JR",
+          "cardNumber": "55554444555544445555"
+        }
+      ]
+    },
+    {
+      "id": "bobet@gmail.com",
+      "addresses": []
+    },
+    {
+      "id": "bobo@gmail.com",
+      "addresses": []
+    },
+    {
+      "id": "Tanner@gmail.com",
+      "cards": []
+    }
+  ],
+  "userDetails": [
+    {
+      "id": "bob@gmail.com",
+      "phoneNumber": "123 456 7890",
+      "profession": "web developer",
+      "imageURL": "https://image.shutterstock.com/image-vector/user-login-authenticate-icon-human-600w-1365533969.jpg"
+    },
+    {
+      "id": "bobet@gmail.com",
+      "phoneNumber": "",
+      "profession": "",
+      "imageURL": "https://image.shutterstock.com/image-vector/user-login-authenticate-icon-human-600w-1365533969.jpg"
+    },
+    {
+      "id": "bobo@gmail.com",
+      "phoneNumber": "",
+      "profession": "",
+      "imageURL": "https://image.shutterstock.com/image-vector/user-login-authenticate-icon-human-600w-1365533969.jpg"
+    },
+    {
+      "id": "Tanner@gmail.com",
+      "phoneNumber": "",
+      "profession": "",
+      "imageURL": "https://image.shutterstock.com/image-vector/user-login-authenticate-icon-human-600w-1365533969.jpg"
+    }
+  ],
+  "food": [
+    {
+      "id": "1",
+      "restaurant": "Bob's Carrots House",
+      "imageURL": "https://image.shutterstock.com/image-photo/vegetables-salad-carrot-on-country-600w-342988355.jpg",
+      "name": "Boiled Carrots",
+      "cuisine": "Eastern European",
+      "rating": "3",
+      "price": "10.43"
+    },
+    {
+      "id": "2",
+      "restaurant": "Bob's Carrots House",
+      "imageURL": "https://image.shutterstock.com/image-photo/healthy-homemade-roasted-carrots-ready-260nw-388287163.jpg",
+      "name": "Steamed Carrots",
+      "cuisine": "Eastern European",
+      "rating": "4",
+      "price": "10.53"
+    },
+    {
+      "id": "3",
+      "restaurant": "Sally's Potato Center",
+      "imageURL": "https://image.shutterstock.com/image-photo/delicious-baked-potatoes-rosemary-on-600w-724061704.jpg",
+      "name": "Broiled Potatos",
+      "cuisine": "Eastern European",
+      "rating": "2",
+      "price": "4.33"
+    },
+    {
+      "id": "4",
+      "restaurant": "Sally's Potato Center",
+      "imageURL": "https://image.shutterstock.com/image-photo/delicious-creamy-mashed-potatoes-butter-600w-1829491676.jpg",
+      "name": "Mashed Potatos",
+      "cuisine": "Eastern European",
+      "rating": "4",
+      "price": "4.99"
+    },
+    {
+      "id": "5",
+      "restaurant": "Sally's Potato Center",
+      "imageURL": "https://image.shutterstock.com/image-photo/delicious-homemade-creamy-potato-salad-260nw-272679356.jpg",
+      "name": "Potato Salad",
+      "cuisine": "Eastern European",
+      "rating": "5",
+      "price": "6.99"
+    }
+  ]
+}

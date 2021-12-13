@@ -1,0 +1,30 @@
+<app-home-top-menue></app-home-top-menue>
+<div class='row p-3'>
+    <div class='col-3'>
+        <button class='btn btn-outline-primary' (click)=doAddCard()>Add New Card</button>
+    </div>
+</div>
+<div class='row p-3'>
+    <div class='col-sm-12 col-md-6 col-lg-3 p-3' *ngFor='let card of userCards'>
+        <div class='card'>
+            <div class='card-body'>
+                <div class='row'>
+                    <h6>Card</h6>
+                </div>
+                <div class='row'>
+                    {{card.name}}
+                </div>
+                <div class='row'>
+                    <dl><dt>{{card.cardNumber}}</dt></dl>
+                </div>
+                <div class='row p-1'>
+                    <button class='btn btn-outline-primary' (click)='doEditCard(card.id)'>Edit</button>
+                </div>
+                <div class='row p-1'>
+                    <button class='btn btn-danger' (click)='doDeleteCard(card.id)'>Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
