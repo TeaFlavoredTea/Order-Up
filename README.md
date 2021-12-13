@@ -15,3 +15,7 @@ start the Angular front end with
 > ng server
 or
 > npm run start
+
+To pass the app's login page you can create a new user, or use an existing one. An example existing user is:
+username: bob@gmail.com
+password: bobRules
