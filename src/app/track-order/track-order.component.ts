@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class TrackOrderComponent implements OnInit {
 
-  timeLeft: number = 3;
+  timeLeft: number = 10;
   interval: any;
   subscribeTimer: any;
   phases = ['your food is being cooked', 'your food is being picked up', 'your food has been delivered']
@@ -29,7 +29,7 @@ export class TrackOrderComponent implements OnInit {
         this.timeLeft--;
 
       } else {
-        this.timeLeft = 3;
+        this.timeLeft = 10;
         
         // manage phases
         this.phaseIndex++
