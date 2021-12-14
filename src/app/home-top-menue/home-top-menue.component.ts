@@ -37,7 +37,7 @@ export class HomeTopMenueComponent implements OnInit {
   }
   
   goToLogout(){
-
+    
     localStorage.removeItem('user')
     this.router.navigate(['login'])
   }

@@ -23,6 +23,7 @@ export class LoginComponent implements OnInit {
     let rememberedUser = localStorage.getItem('stayLoggedIn')
     if( rememberedUser != null) {
       this.username = rememberedUser
+      this.rememberLogin = true
     }
   }
 
@@ -30,18 +31,19 @@ export class LoginComponent implements OnInit {
      //Can the server find a matching user?
     this.service.getUsers().subscribe((response) => { // Yes, validate it
       
+      // Check if the user wants to stay logged-in.
+      if (this.rememberLogin === true){
+        // Logic to stay logged in.
+        localStorage.setItem('stayLoggedIn', this.username)
+      }
+      else {
+        localStorage.removeItem('stayLoggedIn')
+      }
+
       // Find the user if it exsits, then redirect to the home page.
       for (var user of response) {
         if (user.id == this.username && user.password == this.password) {
           
-          // Check if the user wants to stay logged-in.
-          if (this.rememberLogin === true){
-            // Logic to stay logged in.
-            localStorage.setItem('stayLoggedIn', this.username)
-          }
-          else {
-            localStorage.removeItem('stayLoggedIn')
-          }
 
           // remember that the user is logged in between page re-loads
           localStorage.setItem('user', this.username)

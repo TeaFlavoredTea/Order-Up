@@ -112,7 +112,7 @@
   "food": [
     {
       "id": "1",
-      "restaurant": "Bob's Carrots House",
+      "restaurant": "Bob's Carrot House",
       "imageURL": "https://image.shutterstock.com/image-photo/vegetables-salad-carrot-on-country-600w-342988355.jpg",
       "name": "Boiled Carrots",
       "cuisine": "Eastern European",
@@ -121,7 +121,7 @@
     },
     {
       "id": "2",
-      "restaurant": "Bob's Carrots House",
+      "restaurant": "Bob's Carrot House",
       "imageURL": "https://image.shutterstock.com/image-photo/healthy-homemade-roasted-carrots-ready-260nw-388287163.jpg",
       "name": "Steamed Carrots",
       "cuisine": "Eastern European",
